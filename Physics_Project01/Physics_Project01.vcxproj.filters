@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="00.Client">
+      <UniqueIdentifier>{77f804dc-48de-4542-a9ed-5fad2a9c4bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene">
+      <UniqueIdentifier>{510227e6-55b9-4ab4-ab6e-4a4249bc0c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject">
+      <UniqueIdentifier>{e4b5cb11-dcd1-430b-9b0b-131af77a5ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.UI">
+      <UniqueIdentifier>{cb12c072-53ab-48e2-89f9-34b1bcc57459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Manager">
+      <UniqueIdentifier>{812e3084-c416-4e75-94fc-fa1be40ed4b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Headers">
+      <UniqueIdentifier>{310bac75-10c2-42e3-b73b-5d42c358f9d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default">
+      <UniqueIdentifier>{d41e99fd-112a-47ef-a32d-483a74c8979c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default\imgui">
+      <UniqueIdentifier>{a5df48aa-8a5a-44f1-a75e-1b56d9fc6d5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Codes\BGObject.cpp">
+      <Filter>02.GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Codes\DefaultCamera.cpp">
+      <Filter>02.GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Codes\SceneDungeon.cpp">
+      <Filter>01.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Codes\Client.cpp">
+      <Filter>00.Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Codes\glad.c">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Codes\main.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Codes\UIManager.cpp">
+      <Filter>04.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>Default\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>Default\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>Default\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_glfw.cpp">
+      <Filter>Default\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_opengl3.cpp">
+      <Filter>Default\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>Default\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>Default\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Codes\ObjectFactory.cpp">
+      <Filter>98.Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Codes\BGObject.h">
+      <Filter>02.GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Codes\DefaultCamera.h">
+      <Filter>02.GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Codes\SceneDungeon.h">
+      <Filter>01.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Codes\Client.h">
+      <Filter>00.Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Codes\Define.h">
+      <Filter>99.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Codes\Function.h">
+      <Filter>99.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Codes\Enums.h">
+      <Filter>99.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Codes\UIManager.h">
+      <Filter>04.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>Default\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>Default\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_glfw.h">
+      <Filter>Default\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_opengl3.h">
+      <Filter>Default\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_opengl3_loader.h">
+      <Filter>Default\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>Default\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>Default\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>Default\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>Default\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Codes\ObjectFactory.h">
+      <Filter>98.Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="imgui\LICENSE.txt">
+      <Filter>Default\imgui</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

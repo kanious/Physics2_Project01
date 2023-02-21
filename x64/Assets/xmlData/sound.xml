@@ -1,0 +1,21 @@
+<Sound_Data>
+	<Sound category="MaxChannelCount">
+		<Count>32</Count>
+	</Sound>
+	<Sound category="ChannelGroup">
+		<Tag>BG</Tag>
+	</Sound>
+	<Sound category="ChannelGroup">
+		<Tag>Effect</Tag>
+	</Sound>
+	<Sound category="SoundFile">
+		<Tag>Ball</Tag>
+		<Path>Sounds\ball-hits-ball.mp3</Path>
+		<ChannelTag>Effect</ChannelTag>
+		<Loop>0</Loop>
+	</Sound>
+	<Sound category="DSP">
+		<Tag>echo</Tag>
+		<Type>6</Type>
+	</Sound>
+</Sound_Data>

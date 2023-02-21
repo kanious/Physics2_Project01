@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bcfc01bc-436d-4222-ba86-7ca483118976}</ProjectGuid>
+    <RootNamespace>PumpkinEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>PumpkinEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;PUMPKIN_ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(SolutionDir)PumpkinEngine\OpenGL\lib\x86\Debug;$(SolutionDir)PumpkinEngine\OpenGL\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;pugixml.lib;glew32d.lib;fmod_vc.lib;fmodL_vc.lib;glfw3dll.lib;libglew32d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PUMPKIN_ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(SolutionDir)PumpkinEngine\OpenGL\lib\x86\Release;$(SolutionDir)PumpkinEngine\OpenGL\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;pugixml.lib;glew32.lib;fmod_vc.lib;fmodL_vc.lib;glfw3dll.lib;libglew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;PUMPKIN_ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(SolutionDir)OpenGL\lib\x64\Debug;$(SolutionDir)OpenGL\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;pugixml.lib;glew32d.lib;fmod_vc.lib;fmodL_vc.lib;glew32sd.lib;glfw3dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;PUMPKIN_ENGINE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(SolutionDir)OpenGL\lib\x64\Release;$(SolutionDir)OpenGL\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;pugixml.lib;glew32.lib;fmod_vc.lib;fmodL_vc.lib;glew32s.lib;glfw3dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Codes\framework.h" />
+    <ClInclude Include="Codes\pch.h" />
+    <ClInclude Include="Headers\AnimationData.h" />
+    <ClInclude Include="Headers\AnimController.h" />
+    <ClInclude Include="Headers\Animation.h" />
+    <ClInclude Include="Headers\Base.h" />
+    <ClInclude Include="Headers\BoundingBox.h" />
+    <ClInclude Include="Headers\BoxShape.h" />
+    <ClInclude Include="Headers\Camera.h" />
+    <ClInclude Include="Headers\ChannelGroupInfo.h" />
+    <ClInclude Include="Headers\CollisionHandler.h" />
+    <ClInclude Include="Headers\CollisionMaster.h" />
+    <ClInclude Include="Headers\Component.h" />
+    <ClInclude Include="Headers\ComponentMaster.h" />
+    <ClInclude Include="Headers\DSPInfo.h" />
+    <ClInclude Include="Headers\EngineFunction.h" />
+    <ClInclude Include="Headers\EngineStruct.h" />
+    <ClInclude Include="Headers\iPhysicsFactory.h" />
+    <ClInclude Include="Headers\iPhysicsWorld.h" />
+    <ClInclude Include="Headers\iRigidBody.h" />
+    <ClInclude Include="Headers\iShape.h" />
+    <ClInclude Include="Headers\JsonParser.h" />
+    <ClInclude Include="Headers\Light.h" />
+    <ClInclude Include="Headers\LightMaster.h" />
+    <ClInclude Include="Headers\PhysicsDefines.h" />
+    <ClInclude Include="Headers\PhysicsFactory.h" />
+    <ClInclude Include="Headers\PhysicsWorld.h" />
+    <ClInclude Include="Headers\PlaneShape.h" />
+    <ClInclude Include="Headers\RigidBody.h" />
+    <ClInclude Include="Headers\RigidBodyDesc.h" />
+    <ClInclude Include="Headers\SkyBox.h" />
+    <ClInclude Include="Headers\Octree.h" />
+    <ClInclude Include="Headers\QuadTree.h" />
+    <ClInclude Include="Headers\SoundInfo.h" />
+    <ClInclude Include="Headers\SoundSystem.h" />
+    <ClInclude Include="Headers\SoundMaster.h" />
+    <ClInclude Include="Headers\EngineDefines.h" />
+    <ClInclude Include="Headers\EngineError.h" />
+    <ClInclude Include="Headers\GameMaster.h" />
+    <ClInclude Include="Headers\GameObject.h" />
+    <ClInclude Include="Headers\InputDevice.h" />
+    <ClInclude Include="Headers\Layer.h" />
+    <ClInclude Include="Headers\Mesh.h" />
+    <ClInclude Include="Headers\ObjectPooler.h" />
+    <ClInclude Include="Headers\OpenGLDefines.h" />
+    <ClInclude Include="Headers\OpenGLDevice.h" />
+    <ClInclude Include="Headers\Renderer.h" />
+    <ClInclude Include="Headers\Scene.h" />
+    <ClInclude Include="Headers\SphereShape.h" />
+    <ClInclude Include="Headers\Texture.h" />
+    <ClInclude Include="Headers\Timer.h" />
+    <ClInclude Include="Headers\Shader.h" />
+    <ClInclude Include="Headers\Transform.h" />
+    <ClInclude Include="Headers\VIBuffer.h" />
+    <ClInclude Include="Headers\XMLParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Codes\AnimationData.cpp" />
+    <ClCompile Include="Codes\AnimController.cpp" />
+    <ClCompile Include="Codes\Animation.cpp" />
+    <ClCompile Include="Codes\Base.cpp" />
+    <ClCompile Include="Codes\BoindingBox.cpp" />
+    <ClCompile Include="Codes\BoxShape.cpp" />
+    <ClCompile Include="Codes\Camera.cpp" />
+    <ClCompile Include="Codes\ChannelGroupInfo.cpp" />
+    <ClCompile Include="Codes\CollisionHandler.cpp" />
+    <ClCompile Include="Codes\CollisionMaster.cpp" />
+    <ClCompile Include="Codes\Component.cpp" />
+    <ClCompile Include="Codes\ComponentMaster.cpp" />
+    <ClCompile Include="Codes\DSPInfo.cpp" />
+    <ClCompile Include="Codes\JsonParser.cpp" />
+    <ClCompile Include="Codes\Light.cpp" />
+    <ClCompile Include="Codes\LightMaster.cpp" />
+    <ClCompile Include="Codes\PhysicsFactory.cpp" />
+    <ClCompile Include="Codes\PhysicsWorld.cpp" />
+    <ClCompile Include="Codes\PlaneShape.cpp" />
+    <ClCompile Include="Codes\RigidBody.cpp" />
+    <ClCompile Include="Codes\SkyBox.cpp" />
+    <ClCompile Include="Codes\Octree.cpp" />
+    <ClCompile Include="Codes\QuadTree.cpp" />
+    <ClCompile Include="Codes\SoundInfo.cpp" />
+    <ClCompile Include="Codes\SoundSystem.cpp" />
+    <ClCompile Include="Codes\SoundMaster.cpp" />
+    <ClCompile Include="Codes\dllmain.cpp" />
+    <ClCompile Include="Codes\GameMaster.cpp" />
+    <ClCompile Include="Codes\GameObject.cpp" />
+    <ClCompile Include="Codes\InputDevice.cpp" />
+    <ClCompile Include="Codes\Layer.cpp" />
+    <ClCompile Include="Codes\Mesh.cpp" />
+    <ClCompile Include="Codes\ObjectPooler.cpp" />
+    <ClCompile Include="Codes\OpenGLDevice.cpp" />
+    <ClCompile Include="Codes\pch.cpp" />
+    <ClCompile Include="Codes\Renderer.cpp" />
+    <ClCompile Include="Codes\Scene.cpp" />
+    <ClCompile Include="Codes\SphereShape.cpp" />
+    <ClCompile Include="Codes\Texture.cpp" />
+    <ClCompile Include="Codes\Timer.cpp" />
+    <ClCompile Include="Codes\Shader.cpp" />
+    <ClCompile Include="Codes\Transform.cpp" />
+    <ClCompile Include="Codes\VIBuffer.cpp" />
+    <ClCompile Include="Codes\XMLParser.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

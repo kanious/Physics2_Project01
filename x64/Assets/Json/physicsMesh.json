@@ -1,0 +1,112 @@
+[
+ {
+   "ID": "floor",
+   "Path": "Mesh\\physics\\",
+   "FileName": "floor.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.05,
+   "MeshType": "floor",
+   "Texture_ID_Diff": "floor_A_Tex",
+   "Texture_ID_Normal": "floor_A_Tex_N"
+ },
+ {
+   "ID": "earth",
+   "Path": "Mesh\\physics\\",
+   "FileName": "sphere.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.2,
+   "MeshType": "",
+   "Texture_ID_Diff": "earth_Tex",
+   "Texture_ID_Normal": ""
+ },
+ {
+   "ID": "moon",
+   "Path": "Mesh\\physics\\",
+   "FileName": "sphere.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.2,
+   "MeshType": "",
+   "Texture_ID_Diff": "moon_Tex",
+   "Texture_ID_Normal": ""
+ },
+ {
+   "ID": "jupiter",
+   "Path": "Mesh\\physics\\",
+   "FileName": "sphere.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.2,
+   "MeshType": "",
+   "Texture_ID_Diff": "jupiter_Tex",
+   "Texture_ID_Normal": ""
+ },
+ {
+   "ID": "mars",
+   "Path": "Mesh\\physics\\",
+   "FileName": "sphere.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.2,
+   "MeshType": "",
+   "Texture_ID_Diff": "mars_Tex",
+   "Texture_ID_Normal": ""
+ },
+ {
+   "ID": "mercury",
+   "Path": "Mesh\\physics\\",
+   "FileName": "sphere.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.2,
+   "MeshType": "",
+   "Texture_ID_Diff": "mercury_Tex",
+   "Texture_ID_Normal": ""
+ },
+ {
+   "ID": "neptune",
+   "Path": "Mesh\\physics\\",
+   "FileName": "sphere.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.2,
+   "MeshType": "",
+   "Texture_ID_Diff": "neptune_Tex",
+   "Texture_ID_Normal": ""
+ },
+ {
+   "ID": "pluto",
+   "Path": "Mesh\\physics\\",
+   "FileName": "sphere.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.2,
+   "MeshType": "",
+   "Texture_ID_Diff": "pluto_Tex",
+   "Texture_ID_Normal": ""
+ },
+ {
+   "ID": "uranus",
+   "Path": "Mesh\\physics\\",
+   "FileName": "sphere.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.2,
+   "MeshType": "",
+   "Texture_ID_Diff": "uranus_Tex",
+   "Texture_ID_Normal": ""
+ },
+ {
+   "ID": "venus",
+   "Path": "Mesh\\physics\\",
+   "FileName": "sphere.ply",
+   "DataType": 2,
+   "Shader_ID": "DefaultShader",
+   "InitSize": 0.2,
+   "MeshType": "",
+   "Texture_ID_Diff": "venus_Tex",
+   "Texture_ID_Normal": ""
+ }
+]

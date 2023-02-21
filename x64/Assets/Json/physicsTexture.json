@@ -1,0 +1,52 @@
+[
+ {
+   "ID": "floor_A_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "floor_A_d.png"
+ },
+ {
+   "ID": "earth_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "earth.png"
+ },
+ {
+   "ID": "moon_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "moon.png"
+ },
+ {
+   "ID": "jupiter_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "jupiter.png"
+ },
+ {
+   "ID": "mars_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "mars.png"
+ },
+ {
+   "ID": "mercury_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "mercury.png"
+ },
+ {
+   "ID": "neptune_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "neptune.png"
+ },
+ {
+   "ID": "pluto_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "pluto.png"
+ },
+ {
+   "ID": "uranus_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "uranus.png"
+ },
+ {
+   "ID": "venus_Tex",
+   "Path": "Texture\\physics\\",
+   "FileName": "venus.png"
+ }
+]

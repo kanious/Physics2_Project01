@@ -1,0 +1,11 @@
+ID,Path,FileName,DataType,Shader_ID,InitSize,MeshType,Texture_ID_Diff,Texture_ID_Normal
+floor,Mesh\physics\,floor.ply,2,DefaultShader,0.05,floor,floor_A_Tex,floor_A_Tex_N
+earth,Mesh\physics\,sphere.ply,2,DefaultShader,0.2,,earth_Tex,
+moon,Mesh\physics\,sphere.ply,2,DefaultShader,0.2,,moon_Tex,
+jupiter,Mesh\physics\,sphere.ply,2,DefaultShader,0.2,,jupiter_Tex,
+mars,Mesh\physics\,sphere.ply,2,DefaultShader,0.2,,mars_Tex,
+mercury,Mesh\physics\,sphere.ply,2,DefaultShader,0.2,,mercury_Tex,
+neptune,Mesh\physics\,sphere.ply,2,DefaultShader,0.2,,neptune_Tex,
+pluto,Mesh\physics\,sphere.ply,2,DefaultShader,0.2,,pluto_Tex,
+uranus,Mesh\physics\,sphere.ply,2,DefaultShader,0.2,,uranus_Tex,
+venus,Mesh\physics\,sphere.ply,2,DefaultShader,0.2,,venus_Tex,

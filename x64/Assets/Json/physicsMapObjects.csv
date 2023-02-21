@@ -1,0 +1,16 @@
+modelName,layerType,posX,posY,posZ,rotX,rotY,rotZ,scaleX,scaleY,scaleZ,lock,normalX,normalY,normalZ,IsGround
+Camera,camera,-46.70622635,30.39669609,-59.89141464,26.29936218,32.54182053,0,-46.22399139,29.95363426,-59.13567352,FALSE,0,0,0,FALSE
+floor,static_obj,0,0,0,0,0,0,32,1,32,TRUE,0,1,0,TRUE
+floor,static_obj,-32,16,0,0,0,-90,16,1,32,TRUE,1,0,0,FALSE
+floor,static_obj,32,16,0,0,0,90,16,1,32,TRUE,-1,0,0,FALSE
+floor,static_obj,0,16,-32,90,0,0,32,1,16,TRUE,0,0,1,FALSE
+floor,static_obj,0,16,32,-90,0,0,32,1,16,TRUE,0,0,-1,FALSE
+uranus,interative_obj,0,13,0,0,0,0,2,2,2,FALSE,0,0,0,FALSE
+mercury,interative_obj,-10,2,0,0,0,0,0.6,0.6,0.6,FALSE,0,0,0,FALSE
+jupiter,interative_obj,10,9,0,0,0,0,5,5,5,FALSE,0,0,0,FALSE
+mars,interative_obj,0,7,-10,0,0,0,1,1,1,FALSE,0,0,0,FALSE
+venus,interative_obj,0,10,10,0,0,0,1,1,1,FALSE,0,0,0,FALSE
+neptune,interative_obj,10,8,10,0,0,0,1.7,1.7,1.7,FALSE,0,0,0,FALSE
+pluto,interative_obj,-10,5,-10,0,0,0,1.2,1.2,1.2,FALSE,0,0,0,FALSE
+earth,interative_obj,10,3,-10,0,0,0,1.5,1.5,1.5,FALSE,0,0,0,FALSE
+moon,interative_obj,-10,7,10,0,0,0,0.8,0.8,0.8,FALSE,0,0,0,FALSE
