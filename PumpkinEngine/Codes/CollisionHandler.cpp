@@ -292,45 +292,35 @@ _bool CCollisionHandler::CollideSphereWallPlane(const _float& dt, CRigidBody* sp
 	_float fRadius = sphereShape->GetRadius();
 	vec3 vPlanePos = planeBody->GetPosition();
 
+	_bool collision = false;
+
 	if (vNormal.x > 0)
 	{
 		if (vSpherePos.x - fRadius < vPlanePos.x)
-		{
-			vec3 vLinearVelocity = sphereBody->GetLinearVelocity();
-			vec3 ref = reflect(vLinearVelocity, vNormal);
-			vLinearVelocity = ref;
-			sphereBody->SetLinearVelocity(vLinearVelocity);
-		}
+			collision = true;
 	}
 	else if (vNormal.x < 0)
 	{
 		if (vSpherePos.x + fRadius > vPlanePos.x)
-		{
-			vec3 vLinearVelocity = sphereBody->GetLinearVelocity();
-			vec3 ref = reflect(vLinearVelocity, vNormal);
-			vLinearVelocity = ref;
-			sphereBody->SetLinearVelocity(vLinearVelocity);
-		}
+			collision = true;
 	}
 	else if (vNormal.z > 0)
 	{
 		if (vSpherePos.z - fRadius < vPlanePos.z)
-		{
-			vec3 vLinearVelocity = sphereBody->GetLinearVelocity();
-			vec3 ref = reflect(vLinearVelocity, vNormal);
-			vLinearVelocity = ref;
-			sphereBody->SetLinearVelocity(vLinearVelocity);
-		}
+			collision = true;
 	}
 	else if (vNormal.z < 0)
 	{
 		if (vSpherePos.z + fRadius > vPlanePos.z)
-		{
-			vec3 vLinearVelocity = sphereBody->GetLinearVelocity();
-			vec3 ref = reflect(vLinearVelocity, vNormal);
-			vLinearVelocity = ref;
-			sphereBody->SetLinearVelocity(vLinearVelocity);
-		}
+			collision = true;
+	}
+
+	if (collision)
+	{
+		vec3 vLinearVelocity = sphereBody->GetLinearVelocity();
+		vec3 ref = reflect(vLinearVelocity, vNormal);
+		vLinearVelocity = ref;
+		sphereBody->SetLinearVelocity(vLinearVelocity);
 	}
 
 	return false;
